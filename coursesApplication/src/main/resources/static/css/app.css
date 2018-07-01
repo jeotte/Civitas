@@ -1,0 +1,23 @@
+/* Show the sort arrows in the table */
+.st-sort-ascent:before{
+    content: '\25B2';
+}
+
+.st-sort-descent:before{
+    content: '\25BC';
+}
+
+/* Make errors red */
+label.error { color: red!important; }
+
+/* Make the hr show */
+hr {
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#9d9d9d;
+  height: 1px;
+}
+
+/* Give the search div the same bottom margin as the add form */
+#searchDiv { margin-bottom: 15px; }

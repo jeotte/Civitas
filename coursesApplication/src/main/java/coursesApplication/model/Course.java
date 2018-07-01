@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Course {
@@ -11,8 +12,11 @@ public class Course {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	private String subject;
+
+	@Size(max = 3)
 	private String courseNumber;
+
+	private String subject;
 	private String description;
 	
 	public int getId() {
