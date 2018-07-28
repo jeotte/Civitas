@@ -1,6 +1,12 @@
 # Civitas
 
-This application is built with Java 1.8, MySql 5.7, Maven 3, and Spring Boot.
+This application is built with Java 1.8, MySql 5.7, Maven 3, and Spring Boot.  It was created in two days as an exercise for a company I was interviewing with.  It is a small application to keep track of courses.
+
+The application will allow you to enter a new course.  All three fields are required (Subject, Course Number, and Description), and the Course Number can only contain digits and can only be 3 digits long.  The combination of the Subject and Course Number must be unique.
+
+The application will allow you to search for a course by description.  For example, entering bio will match 'Introduction to Biology'.  The results are initially sorted by subject and course number, but can also be sorted through the grid.
+
+The application will allow you to delete a course.  After a record is found through the search, it can be deleted using the delete icon on the right hand side of the results grid.
 
 Steps to Setup
 1. Clone the application
@@ -8,7 +14,7 @@ Steps to Setup
     git clone https://github.com/jeotte/Civitas.git
 
 
-2. The application is configured to use a database deployed on AWS.  Skip this step to use the default.  To use a different database, follow these steps to create a Mysql database:
+2. Follow these steps to create a Mysql database:
 
   2a. My installation is in: C:\Program Files\MySQL\MySQL Server 5.7.  I opened a command prompt in the \bin folder, and ran `mysql -u root -p to log into mysql`
 
@@ -37,12 +43,6 @@ Steps to Setup
 
 4. The app will start running at http://localhost:8080.
 
-
-The application will allow you to enter a new course.  All three fields are required (Subject, Course Number, and Description), and the Course Number can only contain digits and can only be 3 digits long.  The combination of the Subject and Course Number must be unique.
-
-The application will allow you to search for a course by description.  For example, entering bio will match 'Introduction to Biology'.  The results are initially sorted by subject and course number, but can also be sorted through the grid.
-
-The application will allow you to delete a course.  After a record is found through the search, it can be deleted using the delete icon on the right hand side of the results grid.
 
 
 
